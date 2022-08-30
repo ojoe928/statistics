@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+       <title>crypto</title>
+</head>
+<body>
+    <aside>
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i></a></li>
+            <li><a href="#"><i class="fa fa-users"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fa fa-play"></i></a></li>
+            <li><a href="#"><i class="fa fa-bar-chart"></i></a></li>
+            <li><a href="#"><i class="fa fa-gear"></i></a></li>
+        </ul>
+        <input type="radio">
+    </div>
+    </div>
+    </aside>
+    <header>
+        <h4>Statistics</h4>
+        <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="search" placeholder="search">
+        </div>
+         <span><i class="fa fa-bell"></i></span>
+        <div class="right">
+            <p>Anita</p>
+            <i class="fa fa-user-secret"></i>
+        </div>
+    </header>
+   <section>
+    <div class="flex">
+
+        <div class="same">
+          <div class="try">
+            <h5>Friends</h5>
+            <h6>276 people</h6>
+          </div>
+          <div class="do">
+            <i class="fa fa-ellipsis-h"></i>
+            <span>+0.7%</span>  
+          </div>
+        </div>
+        <div class="same">
+          <div class="long">
+            <h5>Unique visitors</h5>
+            <h6>69 people</h6>
+          </div>
+          <div class="short">
+            <p><i class="fa fa-ellipsis-h"></i></p>
+            <h6>-1.7%</h6>
+          </div>
+            </div>
+        <div class="same">
+          <div class="try">
+            <h5>Followers</h5>
+            <h6>288people</h6>
+          </div>
+          <div class="do">
+            <i class="fa fa-ellipsis-h"></i>
+            <span>+1%</span>
+          </div>
+        </div>
+    </div>
+    <div class="flex-two">
+        <div class="graph">
+           <div class="graph-text">
+                <p id="text-one">Audience Reach</p>
+                  <div class="btn">
+                    <button class="btn-one"></button>
+                  Total
+                    <button class="btn-two"></button>
+                  Follower
+                </div>
+            </div>
+            <canvas id="myChart"style="width:100%;max-width:800px;height:250px;">
+            </canvas>
+            <script>
+            var xValues = [300,250,350,450,550,650,750,850,]
+            new Chart("myChart", {
+              type: "line",
+              data: {
+                labels: xValues,
+                datasets: [{ 
+                  data: [0.3,1.7,0.3,2.5,0.7,1.5,2.5,1],
+                  pointBackgroundColor:"#ef820d",
+                  borderColor:"rgb(53, 126, 199)",
+                  pointRadius:3,
+                  fill: false
+                }]
+              },
+              options: {
+                legend: {display:true},
+                title: {
+      display:false,
+
+    }
+              }
+            });
+        </script>
+        </div>
+        <div class="pie-chart">
+          <div id="myPlot" style="width:100%;max-width:300px;height:290px;"></div>
+<script>
+var xValues = ["Desktop", "Mobile-view"];
+var yValues = [14,86];
+var layout = {
+  title:"<b>Reach by device</b>",
+     paper_bgcolor: " #131e3a ",
+  font: {
+      family:'Montserrat,sans-serif',
+      size:10,
+      color:"#ef820d"
+    },
+    margin:{"t":30, "l":10}
+};
+
+var data = [{labels:xValues, values:yValues, type:"pie"}];
+Plotly.newPlot("myPlot", data, layout);
+
+</script>    
+        </div>
+    </div>
+    <div class="flex-three">
+        <div class="bar">
+          <div class="graph-text">
+         <p>Gender/Age</p>
+          <div class="btn">
+            <button class="btn-one"></button>
+            Woman
+            <button class="btn-two"></button>
+          Man
+        </div>
+        </div>
+        <canvas id="barChart" style="width:100%;max-width:700px;height:250px;"></canvas><script>
+var xValues = ["0-16", "16-21", "21-24", "24-27","27-30","30-35","35-40","40-55"];
+var yValues = [20,40,40,45,40,20,30,25];
+var barColors = [ "#ef820d","rgb(53, 126, 199)","rgb(53, 126, 199)",
+"#ef820d","#ef820d","rgb(53, 126, 199)","#ef820d"];
+new Chart("barChart", {
+  type: "bar",
+  data: {
+    labels: xValues, 
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display:false,
+    }
+  }
+});
+</script>
+        </div>
+        <div class="ranges">
+           <div  class="last-flex">
+            <h5>Geo</h5>
+            <p>country <span>city</span></p>
+           </div> 
+           
+           <div class="range">
+            <div class="count">
+              <label>Russia</label>95% 
+              <progress id="file" value="95" max="100"> </progress>
+              <br><br>
+              <label>Ukraine</label>20%
+              <progress id="file" value="20" max="100"> </progress>
+              <br><br>
+              <label>India</label>13%
+              <progress id="file" value="13" max="100"></progress>
+              <br><br>
+              <label>China</label>26%
+              <progress id="file" value="26" max="100"></progress>
+              <br><br>
+              <label>Usa</label>30%
+              <progress id="file" value="30" max="100"> </progress>
+              <br><br>
+              <label>Other</label>40%
+              <progress id="file" value="40" max="100"></progress> 
+                 </div>
+           </div>
+        </div>
+    </div>
+   </section> 
+</body>
+</html>

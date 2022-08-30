@@ -1,0 +1,433 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#ef820d;
+    font-display:'roboto';   
+}
+aside{
+    display:flex;
+    flex-direction: column;
+    width:50px;
+    height:630px;
+    margin-right:30px;
+    float: left;
+    position:fixed;
+    overflow: hidden;
+    align-items: center;
+    justify-items: center;
+    background-color: #131e3a ;
+    border:none;
+    box-shadow:-3px -3px 5px transparent ,3px 3px 5px black;
+    }
+    ul li{
+        list-style:none;
+        padding:none;
+        margin-top:60px;
+        font-size:20px;
+        font-weight: 500px;
+    }
+    li i{
+        margin-right:25px;
+        color:#ef820d;
+    }
+    aside input{
+        margin-top:50px;
+    }
+header{
+    display:flex;
+    flex-direction: row;
+    border:none;
+    margin: 20px;
+    margin-left:70px;
+    height:100px;
+}
+input[type=search]{
+    outline:none;
+}
+h4{
+    font-size:30px;
+    font-weight:200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#131e3a;;
+}
+.search{width:150px;
+    height: 10px;
+    display: flex;
+    flex-direction:row;
+    margin:38px;
+    padding:10px;
+    margin-right: 0%;
+    border:1px solid white;
+    border-radius:5px;
+    background-color:#131e3a;
+}
+.search i{
+    color:white;
+}
+.search input{
+    width:90px;
+    height: 20px;
+    border:none;
+    background-color: #131e3a;
+    margin-left: 5px;
+}
+input{
+    color: #ffffff;
+    border:none;
+}
+header span{
+    color:#131e3a;
+    margin-top:45px;
+    margin-left: 10px;
+}
+.right{
+    width:100px;
+    height:30px;
+    float:right;
+    display:inline-flex;
+    align-items: center;
+    margin:10px;
+    padding: 10px;
+    margin-left:800px;
+}
+.right i{
+    margin-bottom: 15px;
+    width:20px;
+    height:20px;
+    font-size:25px;
+    margin-left:10px;
+}
+.flex{
+    display:flex;
+    flex-direction:row;
+    margin:10px;
+    margin-left: 70px;
+    border:none;
+}
+.same{
+    width:400px;
+    height:150px;
+    padding:10px;
+    margin:10px;
+    background-color: #131e3a ;
+    border:none;
+    box-shadow:-3px -3px 5px transparent ,3px 3px 5px black;
+    color:#ef820d;
+    border-radius:10px;
+    display:flex;
+    flex-direction:row;
+}
+.same h5{
+     font-size:30px;
+     margin:0%;
+     padding:10px;
+     letter-spacing:normal;
+     font-weight:150px;
+     font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+.try{
+    display:flex;
+    flex-direction: column;
+    margin-left:20px;
+}
+.try h6{
+    font-size: large;
+    font-weight:500;
+}
+.do i{
+    font-size:20px;
+    margin-bottom:70px;
+}
+.do span{
+    font-size: large;
+    opacity:0.7;
+}
+.do{
+    display:inline;
+    margin-left:150px;
+    height:100%;
+    padding:10px;
+}
+.long h6{
+    font-size: large;
+    font-weight:500;
+    margin-left:20px;
+    
+}
+.short i{
+    font-size:large;
+    margin-left:90px;
+    margin-bottom:50px;
+}
+.short h6{
+    margin-left:90px;
+    opacity:0.7;
+}
+.flex-two{
+    display:flex ;
+    flex-direction: row;
+    margin:10px;
+    margin-left:70px;
+    padding:10px;
+}
+.graph{
+    width:860px;
+    height:300px;
+    background-color: #131e3a ;
+    box-shadow:-3px -3px 5px transparent ,3px 3px 5px black;
+    border-radius:10px;
+    margin-right:20px;
+}
+.graph-text{
+    width:90%;
+    height:20px;
+    color:#ef820d;
+    display:flex;
+    flex-direction:row;
+}
+#text-one{
+    margin-left: 15px;
+    width: 200px;
+}
+.btn{
+    margin-left: 100px;
+    display:inline-flex;
+    margin-left: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top:17px;
+    height: 15px;;
+}
+.btn-one{
+    background-color:#ffffff ;
+    height:13px;
+    margin: 5px;
+    border-radius:4px;
+}
+
+.btn-two{
+    border:1px solid rgb(248, 140, 1) ;
+    height:13px;
+    margin: 5px;
+    border-radius:4px;
+}
+#myChart{
+    margin:20px;
+}
+.pie-chart{
+    width:350px;
+    height:300px;
+    align-items: center;
+    border-radius:10px;
+    background-color: #131e3a;
+    box-shadow:-3px -3px 5px transparent ,3px 3px 5px black;
+}
+#myPlot{
+    margin: 5px ;
+}
+.flex-three{
+    display: flex;
+    flex-direction:row;
+    margin-top:10px;
+    padding:10px;
+}
+.bar{
+    display: flex;
+    flex-direction:column;
+    width:810px;
+    height:300px;
+    color: #ef820d;
+    background-color:#0D203D;
+    box-shadow:-3px -3px 5px transparent ,3px 3px 5px black;
+    border:none;
+    border-radius:10px;
+    margin-left:75px;
+}
+#left{
+    float: right;
+}
+.ranges{
+    width:440px;
+    height:300px;
+    border:none;
+    color: #ef820d;
+    background-color:#0D203D;
+    box-shadow:-3px -3px 5px transparent ,3px 3px 5px black;
+    border-radius:10px;
+    margin-left:25px;
+}
+#barChart{
+    height:90%;
+}
+.last-flex{
+    display: inline-flex;
+}
+.count{
+    margin-top:30px;
+    column-count:2;
+    padding:10px;
+    margin:10px;
+}
+
+label{
+    padding:2px;
+    margin-right:80px;
+}
+#file{
+    height:19px;
+}
+@media screen and (max-width:600px){
+    body{
+        height:220vh;
+        background-color: #ffffff;
+        margin:0%;
+        padding:0%;
+    }
+    header{
+        width:20%;  
+        padding:none;
+        margin:none; 
+     }
+     header h4{
+        margin-right:55px;
+     }
+    header .search{
+    display:none;
+     }
+    header span{
+        display:none;
+     }
+    header .right{
+        margin-left:18%;
+        display: inline-flex;
+        justify-content: center;
+        align-items:center;
+        margin-top:50px;
+    }
+    
+    aside{
+        float:left;
+        margin:0px;
+        position:fixed;
+        width:30px;
+        align-items: center;
+    }
+    .flex{
+        display: block;
+        width:90%;
+        margin-bottom: 0%;
+        margin-left:30px;
+    }
+    .same{
+        width:90%;
+        margin-bottom:0px;
+        height:110px;
+    }
+    .same h5{
+        font-size:large;
+        margin-left: 0%;
+    }
+
+    .try h6{
+        margin-top:40px;
+        font-size: medium;
+    }
+    .do{
+      margin-left:30px; 
+      height:50px;
+      padding:none;
+      display: flex;
+      flex-direction:column;
+      margin-left:95px;
+    }
+    .do i{
+        margin-left:30px;
+    }
+    .do span{
+        margin-left:10px;
+        margin-top:0px;
+    }
+    .flex-two{
+        display: block;
+        width:90%;
+        margin-left:30px;
+        margin-bottom:5px;
+    }
+    .pie-chart{
+        width: 325px;
+        margin-bottom: 0%;
+    }
+    #myPlot{
+        margin-top:10px;
+        border-radius:10px;
+        align-items: center;
+    }
+    
+    .flex-three{
+        display: block;
+        width:95%;
+        margin-top:5px;
+        margin-bottom: 0%;
+        margin-left:8%;
+    }
+    .bar{
+        margin:0%;
+        margin-left:0%;
+        width:90%;
+    }
+    #barChart{
+        height:100%;
+        width:90%;
+    }
+    .head{
+        width: 20px;
+        height: 10px;
+    }
+    .range{
+        margin-top:0%;
+        width:90%;
+        height:400px
+    }
+    .ranges{
+        margin-top: 10px;
+        margin-left:0px;
+        width:90%;
+        height:400px;
+    }
+    .count{
+        display:inline;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+    }
+    label{
+       padding:none;   
+       margin-right:80%;  
+    }
+    #file{
+        margin-left:60px;
+    }
+    .last-flex{
+        margin-bottom:10px;
+        width:80%;
+        height: 10px;
+    }
+    .graph{
+        width:95%;
+        height:280px;
+    }
+    .graph-text{
+        align-items:center;
+        padding:none;
+        margin:none;
+        width:5%;
+    }
+    .graph-text p{
+        height:5px;
+    }
+    #myChart{
+        height: 150px;
+        width:80%;
+    }
+}
